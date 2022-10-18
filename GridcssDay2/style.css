@@ -1,0 +1,103 @@
+.container{
+    display: grid;
+    text-align: center;
+    color: whitesmoke;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.3fr 0.2fr;
+    grid-template-areas: 
+    'header header header header'
+    'sidebars main main main'
+    'sidebars content1 content2 content3'
+    'sidebars footer footer footer';
+    grid-gap:0.3rem
+
+}
+.container p{
+    text-align: left;
+    font-style: italic;
+    margin: 3px;
+    padding: 4px;
+
+}
+.images{
+    image-resolution: 122px;
+    background: url(./IMG/DEMO\ \(2\).jpg);
+    
+    
+}
+.topnav{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px;
+    margin: 3px;
+}
+.topnav ul{
+    display: inline-block;
+    box-shadow: 100px;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 3px;
+    margin: 3px;
+
+}
+.topnav ul li{
+    display: inline-block;
+    box-shadow: 100px;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 50px;
+    margin: 3px;
+
+}
+.topnav a:hover{
+    color: #fff;
+    box-shadow: 40px;
+}
+header{
+    background: rgb(226, 110, 43);
+    grid-area: header;
+}
+.btn{
+    background-color: rgb(25, 0, 255);
+    color: #fff;
+    background-position: 3rem;
+}
+.btn:hover{
+    background: rgb(6, 243, 65);
+    color: #fff;
+}
+#top-nav{
+    color: rgb(250, 255, 255);
+    font-size: 70px;
+    text-shadow: rgb(255, 255, 255);
+    text-decoration-line: overline;
+    text-size-adjust: 100px;
+}
+
+main{
+    background: rgb(43, 226, 113);
+    grid-area: main;
+    background: url(./img/DEMO\ \(4\).jpg);
+}
+#sidebars{
+    background: rgb(61, 43, 226);
+    grid-area: sidebars;
+}
+
+#content1{
+    background: rgb(43, 46, 226);
+    grid-area: content1;
+}
+#content2{
+    background: rgb(186, 226, 43);
+    grid-area: content2;
+}
+#content3{
+    background: rgb(226, 43, 171);
+    grid-area: content3;
+}
+footer{
+    background: rgb(186, 226, 43);
+    grid-area: footer;
+}
